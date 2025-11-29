@@ -15,3 +15,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 50px; 
 }
+:root {
+  font-family: var(--font-poppins), sans-serif;
+}

@@ -1,0 +1,68 @@
+export const servicesFilters = ["Design","All Services",  "Development"] as const;
+
+export const servicesList = [
+  {
+    id: 1,
+    title: "Web Development",
+    description: "Fast. Scalable. Built with the latest tech. We develop websites that load fast, work everywhere, and grow with your business",
+    image: "/services/service-1.svg",
+    category: "Design",
+    featured: false,
+  },
+  {
+    id: 2,
+    title: "UI/UX Design",
+    description: "Elevating your brand through cohesive visual systems.",
+    image: "/services/service-2.svg",
+    category: "Design",
+    featured: true, 
+  },
+  {
+    id: 3,
+    title: "Mobile App Development",
+    description: "Apps your users love — on any device. Whether it’s native or cross-platform, we deliver smooth, high-performance mobile experiences",
+    image: "/services/service-3.svg",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Cloud Solutions",
+    description: "Smart cloud infrastructure — tailored to your scale. From setup to migration, we build reliable cloud systems that grow with you.",
+    image: "/services/service-4.svg",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: " Backend Services",
+    description: "The engine behind your product. We develop secure, scalable backend systems that power modern applications.",
+    image: "/services/service-5.svg",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "Security Solutions",
+    description: "Built-in protection from day one. We help you stay secure with deep audits, compliance checks, and proactive threat defense.",
+    image: "/services/service-6.svg",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Brand Identity",
+    description: "A brand that speaks before you do. We create cohesive brand systems that leave a lasting impression and reflect who you truly are.",
+    image: "/services/service-7.svg",
+    category: "Development",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "AI Solutions",
+    description: "Apps your users love — on any device. Whether it’s native or cross-platform, we deliver smooth, high-performance mobile experiences",
+    image: "/services/service-8.svg",
+    category: "Development",
+    featured: false,
+  },
+];

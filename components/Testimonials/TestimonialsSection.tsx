@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
         <div className="relative max-w-[790px] w-full flex items-center justify-center">
           <button
             onClick={prevSlide}
-            className="absolute left-[-60px] top-1/2 -translate-y-1/2 z-20"
+            className="absolute left-[-60px] top-1/2 -translate-y-1/2 z-20 hidden md:block"
           >
             <Image src={prevIcon} alt="Previous" width={40} height={40} />
           </button>
@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
 
           <button
             onClick={nextSlide}
-            className="absolute right-[-60px] top-1/2 -translate-y-1/2 z-20"
+            className="absolute right-[-60px] top-1/2 -translate-y-1/2 z-20 hidden md:block"
           >
             <Image src={nextIcon} alt="Next" width={40} height={40} />
           </button>

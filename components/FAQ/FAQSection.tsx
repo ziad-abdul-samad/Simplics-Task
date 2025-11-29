@@ -31,7 +31,7 @@ export default function FAQSection() {
         </h1>
       </div>
 
-      <div className="flex gap-4 justify-between mb-5 max-w-4xl mx-auto">
+      <div className="flex gap-4 justify-between mb-5 max-w-4xl mx-auto flex-wrap">
         {filters.map((filter) => (
           <button
             key={filter}

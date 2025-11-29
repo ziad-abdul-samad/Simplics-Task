@@ -43,7 +43,7 @@ export default function ServicesSection() {
           description="We provide end-to-end digital services that help businesses thrive in an ever-evolving digital world. Our solutions combine design, development, and strategy to deliver results that matter."
         />
 
-        <div className="flex gap-4 mt-8 mx-auto justify-center">
+        <div className="flex gap-4 mt-8 mx-auto justify-center flex-wrap">
           {servicesFilters.map((filter) => (
             <button
               key={filter}

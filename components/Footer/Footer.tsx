@@ -1,10 +1,20 @@
-"use client";
-
 import Image from "next/image";
 import { Instagram, Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
+import { useMemo } from "react";
 import footerSBg from "@/public/footer-bg.svg";
 
 export default function Footer() {
+  const socialLinks = useMemo(
+    () => [
+      { icon: <Instagram size={18} />, label: "Instagram" },
+      { icon: <Facebook size={18} />, label: "Facebook" },
+      { icon: <Twitter size={18} />, label: "Twitter" },
+      { icon: <Linkedin size={18} />, label: "LinkedIn", bg: "#0E76A8" },
+      { icon: <Youtube size={18} />, label: "YouTube" },
+    ],
+    []
+  );
+
   return (
     <footer className="py-16 mt-20 relative overflow-hidden">
       <div className="absolute bottom-0 right-0 h-full w-full -z-10 overflow-hidden">
@@ -51,20 +61,10 @@ export default function Footer() {
 
         <div>
           <div className="space-y-3">
-            {[
-              { icon: <Instagram size={18} />, label: "Instagram" },
-              { icon: <Facebook size={18} />, label: "Facebook" },
-              { icon: <Twitter size={18} />, label: "Twitter" },
-              {
-                icon: <Linkedin size={18} />,
-                label: "LinkedIn",
-                bg: "#0E76A8",
-              },
-              { icon: <Youtube size={18} />, label: "YouTube" },
-            ].map((item) => (
+            {socialLinks.map((item) => (
               <div
                 key={item.label}
-                className={`flex items-center gap-3 px-4 py-2 rounded-lg cursor-pointer w-fit  ${
+                className={`flex items-center gap-3 px-4 py-2 rounded-lg cursor-pointer w-fit ${
                   item.bg ? "" : "bg-[#FFFFFF14] hover:bg-[#ffffff22]"
                 }`}
                 style={item.bg ? { backgroundColor: item.bg } : {}}

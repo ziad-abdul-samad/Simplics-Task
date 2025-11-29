@@ -35,7 +35,7 @@ export default function WorkSection() {
         description="We craft digital products that solve real problems and drive growth. From smart interfaces to powerful platforms — our work speaks for itself."
       />
 
-      <div className="flex justify-center items-center gap-24 py-24">
+      <div className="flex justify-center items-center gap-24 py-24 flex-wrap">
         <Image src={lapImage} alt="image" />
         <Image src={mobileImage} alt="image" />
         <Image src={lapImage} alt="image" />

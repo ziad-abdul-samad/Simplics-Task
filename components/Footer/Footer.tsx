@@ -17,7 +17,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="pl-7 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 ">
         <div className="flex flex-col gap-4">
           <Image src="/logo.svg" alt="logo" width={120} height={40} />
           <p className="text-base leading-relaxed">
